@@ -1,0 +1,6 @@
+{
+  "name": "Maison Correas | Aeterna Milano",
+  "description": "Ultra-luxury Italian woven belts ecommerce experience, editorial showcase and AI style concierge.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

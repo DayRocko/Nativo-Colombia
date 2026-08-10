@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', 'Manrope', -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF8F5;
+    color: #1C1917;
+    letter-spacing: 0.01em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Previene zoom no deseado en iOS al hacer focus en inputs */
+    touch-action: manipulation;
+  }
+
+  /* Mejora tap targets en móvil */
+  button, a, select, input {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Scroll suave nativo en iOS */
+  * {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom scrollbar for luxury feel */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4C9BD;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B5A492;
+}
+
+/* Subtle luxury animation utility classes */
+@keyframes fadeInSlow {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeInSlow 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Gold shimmer subtle border */
+.border-gold-glow {
+  border-color: rgba(197, 168, 128, 0.35);
+}
+
+.bg-bone {
+  background-color: #FAF8F5;
+}
+.bg-cream-sand {
+  background-color: #F4EFEA;
+}
+.bg-dark-charcoal {
+  background-color: #141312;
+}
+.bg-marble-light {
+  background-color: #F2EFE9;
+}
+
+/* Oculta scrollbar horizontal en filtros de categoría */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Modales: full-screen en móvil */
+@media (max-width: 640px) {
+  .modal-mobile-full {
+    position: fixed !important;
+    inset: 0 !important;
+    border-radius: 0 !important;
+    max-height: 100dvh !important;
+    height: 100dvh !important;
+  }
+}
+
+/* Safe area para dispositivos con notch */
+.safe-top    { padding-top: env(safe-area-inset-top); }
+.safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
+
+/* Botones con mínimo tap target de 44px (Apple HIG) */
+.tap-target {
+  min-height: 44px;
+  min-width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Slide cart y modales: ancho full en móvil */
+@media (max-width: 640px) {
+  .slide-panel {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
