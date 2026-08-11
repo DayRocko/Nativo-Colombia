@@ -28,7 +28,7 @@ export const Footer: React.FC<FooterProps> = ({ cms, onOpenAdmin }) => {
               {cms?.brandName || 'Nativo Colombia'}
             </h3>
             <p className="text-xs text-[#A89F91] leading-relaxed font-serif italic max-w-sm">
-              Maison de correas tejidas de lujo y accesorios sartoriales elaborados individualmente en la provincia de Boyacá, Colombia.
+              Casa de correas tejidas de lujo y accesorios sartoriales elaborados individualmente en la provincia de Boyacá, Colombia.
             </p>
 
             <div className="pt-2 text-xs text-[#A89F91] space-y-1">

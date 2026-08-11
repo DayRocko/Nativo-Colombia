@@ -48,7 +48,7 @@ export const FeaturedCollections: React.FC<FeaturedCollectionsProps> = ({
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.25em] text-[#8C6D3F] mb-3 font-semibold">
             <Compass className="w-3.5 h-3.5" />
-            <span>Maison Correas Catalog</span>
+            <span>Catálogo Nativo Colombia</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-serif-luxury tracking-wide text-[#1C1917] font-normal uppercase">
             Colección de Correas Tejidas

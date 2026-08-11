@@ -1,6 +1,6 @@
 export type Language = 'es' | 'en' | 'it' | 'fr';
 
-export type Currency = 'USD' | 'EUR' | 'GBP';
+export type Currency = 'USD' | 'EUR' | 'GBP' | 'COP';
 
 export interface ProductVariant {
   id: string;
@@ -15,7 +15,7 @@ export interface ProductImageContext {
   id: string;
   title: string;
   url: string;
-  tag: 'Studio' | 'Museum' | 'Penthouse' | 'Monaco Yacht' | 'Boutique' | 'Lifestyle Model' | 'Macro Weave';
+  tag: string;
   description?: string;
 }
 
@@ -26,7 +26,7 @@ export interface Product {
   subtitle: string;
   price: number;
   currency: Currency;
-  category: 'Classic' | 'Business' | 'Monaco' | 'Navy' | 'Summer' | 'Limited' | 'Luxury' | 'Italian';
+  category: string;
   tags: string[];
   descriptionShort: string;
   descriptionLong: string;

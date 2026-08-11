@@ -41,7 +41,7 @@ import {
 export default function App() {
   // Global Settings State
   const [language, setLanguage] = useState<Language>('es');
-  const [currency, setCurrency] = useState<Currency>('USD');
+  const [currency, setCurrency] = useState<Currency>('COP');
 
   // Limpieza de claves antiguas del localStorage (migración de aeterna_ → nativo_)
   // También fuerza los campos de texto que pueden haber quedado en inglés
@@ -407,6 +407,84 @@ export default function App() {
         onUpdateCoupons={setCoupons}
         journal={journal}
       />
+
+      {/* ── BOTTOM NAVIGATION BAR (Mobile Only) ── */}
+      <nav className="lg:hidden fixed bottom-0 inset-x-0 z-40 bg-[#141312]/97 backdrop-blur-xl border-t border-[#2C2825] safe-bottom">
+        <div className="flex items-center justify-around px-2 py-2">
+
+          {/* Home */}
+          <button
+            onClick={() => { const el = document.getElementById('home'); el ? el.scrollIntoView({ behavior: 'smooth' }) : window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+            className="flex flex-col items-center gap-0.5 px-3 py-2 text-[#A89F91] hover:text-[#FAF8F5] transition-colors min-w-0"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+            </svg>
+            <span className="text-[9px] uppercase tracking-wider font-medium">Inicio</span>
+          </button>
+
+          {/* Collection */}
+          <button
+            onClick={() => { const el = document.getElementById('collection'); el?.scrollIntoView({ behavior: 'smooth' }); }}
+            className="flex flex-col items-center gap-0.5 px-3 py-2 text-[#A89F91] hover:text-[#FAF8F5] transition-colors min-w-0"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
+            </svg>
+            <span className="text-[9px] uppercase tracking-wider font-medium">Colección</span>
+          </button>
+
+          {/* Cart — highlighted */}
+          <button
+            onClick={() => setIsCartOpen(true)}
+            className="flex flex-col items-center gap-0.5 px-3 py-2 relative"
+          >
+            <div className="bg-[#C5A880] rounded-full p-2.5 shadow-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-[#141312]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007Z" />
+              </svg>
+            </div>
+            {cart.length > 0 && (
+              <span className="absolute top-1 right-2 bg-[#1C1917] text-white text-[9px] w-4 h-4 rounded-full flex items-center justify-center font-bold">
+                {cart.reduce((sum, item) => sum + item.quantity, 0)}
+              </span>
+            )}
+            <span className="text-[9px] uppercase tracking-wider font-medium text-[#C5A880]">Bolsa</span>
+          </button>
+
+          {/* Wishlist */}
+          <button
+            onClick={() => setIsWishlistOpen(true)}
+            className="flex flex-col items-center gap-0.5 px-3 py-2 text-[#A89F91] hover:text-[#FAF8F5] transition-colors relative min-w-0"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+            </svg>
+            {wishlistIds.length > 0 && (
+              <span className="absolute top-1 right-2 bg-[#C5A880] text-white text-[9px] w-4 h-4 rounded-full flex items-center justify-center font-bold">
+                {wishlistIds.length}
+              </span>
+            )}
+            <span className="text-[9px] uppercase tracking-wider font-medium">Deseos</span>
+          </button>
+
+          {/* Account */}
+          <button
+            onClick={() => setIsAccountOpen(true)}
+            className="flex flex-col items-center gap-0.5 px-3 py-2 text-[#A89F91] hover:text-[#FAF8F5] transition-colors min-w-0"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+            </svg>
+            <span className="text-[9px] uppercase tracking-wider font-medium">Cuenta</span>
+          </button>
+
+        </div>
+      </nav>
+
+      {/* Spacer para que el contenido no quede tapado por el bottom nav en móvil */}
+      <div className="lg:hidden h-16" />
+
     </div>
   );
 }

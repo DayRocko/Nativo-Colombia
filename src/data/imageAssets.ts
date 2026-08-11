@@ -14,6 +14,13 @@ import beltMarinaLuxury from '../assets/images/belt_marina_luxury.jpg';
 import beltBuckleMacro from '../assets/images/belt_buckle_macro.jpg';
 import beltManWearing from '../assets/images/belt_man_wearing.jpg';
 
+// Nuevas imágenes dinámicas (subidas por el usuario)
+import newProduct1 from '../assets/images/new_product_1.jpg';
+import newProduct2 from '../assets/images/new_product_2.jpg';
+import newProduct3 from '../assets/images/new_product_3.jpg';
+import newProduct4 from '../assets/images/new_product_4.jpg';
+import newProduct5 from '../assets/images/new_product_5.jpg';
+
 export const LUXURY_IMAGES = {
   heroBelts,
   coiledMasterpiece,
@@ -29,4 +36,10 @@ export const LUXURY_IMAGES = {
   beltMarinaLuxury,
   beltBuckleMacro,
   beltManWearing,
+  
+  newProduct1,
+  newProduct2,
+  newProduct3,
+  newProduct4,
+  newProduct5,
 };

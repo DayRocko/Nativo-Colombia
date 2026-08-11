@@ -20,8 +20,8 @@ export const AccountModal: React.FC<AccountModalProps> = ({
   const [activeTab, setActiveTab] = useState<'orders' | 'profile' | 'addresses'>('orders');
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#141312]/80 backdrop-blur-md overflow-y-auto">
-      <div className="relative w-full max-w-4xl bg-[#FAF8F5] text-[#1C1917] shadow-2xl rounded-sm border border-[#D4C9BD] p-6 sm:p-8 my-auto">
+    <div className="fixed inset-0 z-50 flex items-start sm:items-center justify-center sm:p-4 bg-[#141312]/80 backdrop-blur-md overflow-y-auto">
+      <div className="relative w-full sm:max-w-4xl bg-[#FAF8F5] text-[#1C1917] shadow-2xl sm:rounded-sm border-0 sm:border border-[#D4C9BD] p-4 sm:p-8 min-h-screen sm:min-h-0 sm:my-auto">
         <button onClick={onClose} className="absolute top-4 right-4 p-2 text-[#7A6E63] hover:text-[#1C1917]">
           <X className="w-5 h-5" />
         </button>

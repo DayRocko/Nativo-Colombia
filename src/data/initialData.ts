@@ -3,11 +3,11 @@ import { LUXURY_IMAGES } from './imageAssets';
 
 export const INITIAL_CMS_SETTINGS: CMSSettings = {
   brandName: 'Nativo Colombia',
-  brandTagline: 'Maison Correas Tejidas de Lujo Colombiano',
+  brandTagline: 'Nativo Colombia Tejidos de Lujo',
   heroTitle: 'EL ALMA DEL TEJIDO',
   heroSubtitle: 'Artesanía Colombiana. Lujo Atemporal.',
-  announcementText: 'Envío Express de Cortesía a Todo el Mundo en Pedidos Superiores a $500',
-  freeShippingThreshold: 500,
+  announcementText: 'Envío Express Nacional Gratuito en Pedidos Superiores a $200.000 COP',
+  freeShippingThreshold: 200000,
   supportEmail: 'concierge@nativocolombia.com',
   phoneContact: '+57 1 234 5678',
   addressMilano: 'Calle 70 # 5-83, Bogotá D.C., Colombia',
@@ -16,8 +16,8 @@ export const INITIAL_CMS_SETTINGS: CMSSettings = {
 
 export const INITIAL_COUPONS: Coupon[] = [
   { code: 'NATIVO10', discountPercentage: 10, active: true },
-  { code: 'VIPBOGOTA', discountPercentage: 15, active: true, minSpend: 600 },
-  { code: 'COLOMBIA20', discountPercentage: 20, active: true, minSpend: 1000 },
+  { code: 'VIPBOGOTA', discountPercentage: 15, active: true, minSpend: 250000 },
+  { code: 'COLOMBIA20', discountPercentage: 20, active: true, minSpend: 400000 },
 ];
 
 export const INITIAL_PRODUCTS: Product[] = [
@@ -26,8 +26,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     sku: 'NAT-MNC-001',
     name: 'The Tricolor Boyacá Edition',
     subtitle: 'Signature Rojo, Verde & Amarillo Elastic Weave',
-    price: 790,
-    currency: 'USD',
+    price: 95000,
+    currency: 'COP',
     category: 'Boyacá',
     tags: ['Best Seller', 'Boyacá Edition', 'Colombian Leather', 'Hand-Aged Brass'],
     descriptionShort: 'Correa tejida colombiana de elasticidad superior con terminaciones en piel de res colombiana de grano entero y hebilla de latón envejecido a mano.',
@@ -124,7 +124,12 @@ export const INITIAL_PRODUCTS: Product[] = [
         url: LUXURY_IMAGES.scenarioYacht,
         tag: 'Cartagena Bay',
         description: 'En la cubierta de una embarcación clásica en la bahía de Cartagena de Indias'
-      }
+      },
+      { id: 'img-new-1', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct1, tag: 'Studio' },
+      { id: 'img-new-2', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct2, tag: 'Studio' },
+      { id: 'img-new-3', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct3, tag: 'Studio' },
+      { id: 'img-new-4', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct4, tag: 'Studio' },
+      { id: 'img-new-5', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct5, tag: 'Studio' }
     ]
   },
   {
@@ -132,8 +137,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     sku: 'NAT-CLS-002',
     name: 'El Clásico Andino Cognac',
     subtitle: 'Warm Amber Colombian Leather & Woven Elastic',
-    price: 680,
-    currency: 'USD',
+    price: 85000,
+    currency: 'COP',
     category: 'Classic',
     tags: ['Signature', 'Classic Collection', 'Colombian Leather'],
     descriptionShort: 'Elegancia clásica colombiana en tono coñac cálido con cuero de res curtido al vegetal y hebilla bronce cepillado.',
@@ -193,7 +198,12 @@ export const INITIAL_PRODUCTS: Product[] = [
         url: LUXURY_IMAGES.beltManWearing,
         tag: 'Lifestyle Model',
         description: 'Combinado con camisa de lino y pantalón sastre colombiano'
-      }
+      },
+      { id: 'img-new-1', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct1, tag: 'Studio' },
+      { id: 'img-new-2', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct2, tag: 'Studio' },
+      { id: 'img-new-3', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct3, tag: 'Studio' },
+      { id: 'img-new-4', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct4, tag: 'Studio' },
+      { id: 'img-new-5', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct5, tag: 'Studio' }
     ]
   },
   {
@@ -201,8 +211,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     sku: 'NAT-LTD-003',
     name: 'El Magnifico Edición Oro Colombia',
     subtitle: 'Deep Navy & Pure 24k Gold Brushed Hardware',
-    price: 950,
-    currency: 'USD',
+    price: 125000,
+    currency: 'COP',
     category: 'Limited',
     tags: ['Limited Edition', 'Luxury Collection', '24k Gold Accents'],
     descriptionShort: 'Edición limitada numerada a 100 piezas globales. Hebilla bañada en oro de 24k cepillado y fibra elástica de alta resistencia colombiana.',
@@ -255,7 +265,12 @@ export const INITIAL_PRODUCTS: Product[] = [
         url: LUXURY_IMAGES.beltManWearing,
         tag: 'Lifestyle Model',
         description: 'Presentación editorial de lujo con accesorio de máxima distinción'
-      }
+      },
+      { id: 'img-new-1', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct1, tag: 'Studio' },
+      { id: 'img-new-2', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct2, tag: 'Studio' },
+      { id: 'img-new-3', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct3, tag: 'Studio' },
+      { id: 'img-new-4', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct4, tag: 'Studio' },
+      { id: 'img-new-5', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct5, tag: 'Studio' }
     ]
   },
   {
@@ -263,8 +278,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     sku: 'NAT-NVY-004',
     name: 'The Cartagena Sailing Belt',
     subtitle: 'Nautical Navy & Pure White Dual Weave',
-    price: 720,
-    currency: 'USD',
+    price: 89000,
+    currency: 'COP',
     category: 'Caribe',
     tags: ['Caribe Collection', 'Sailing', 'Summer Essential'],
     descriptionShort: 'Diseñado para la vida marítima y clubes náuticos del Caribe colombiano. Resistencia al agua y salinidad.',
@@ -324,7 +339,12 @@ export const INITIAL_PRODUCTS: Product[] = [
         url: LUXURY_IMAGES.scenarioBoutique,
         tag: 'Boutique',
         description: 'En vitrina iluminada con tonos cálidos de latón'
-      }
+      },
+      { id: 'img-new-1', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct1, tag: 'Studio' },
+      { id: 'img-new-2', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct2, tag: 'Studio' },
+      { id: 'img-new-3', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct3, tag: 'Studio' },
+      { id: 'img-new-4', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct4, tag: 'Studio' },
+      { id: 'img-new-5', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct5, tag: 'Studio' }
     ]
   },
   {
@@ -332,12 +352,12 @@ export const INITIAL_PRODUCTS: Product[] = [
     sku: 'NAT-BSN-005',
     name: 'El Ejecutivo Andino Weave',
     subtitle: 'Stealth Charcoal & Matte Gunmetal Buckle',
-    price: 750,
-    currency: 'USD',
+    price: 92000,
+    currency: 'COP',
     category: 'Business',
     tags: ['Business', 'Executive', 'Luxury Collection'],
     descriptionShort: 'Sobriedad ejecutiva para trajes formales. Tono gris carbón apagado con terminación en piel de res negro mate colombiana.',
-    descriptionLong: 'Diseñado para la junta directiva y eventos de etiqueta contemporáneos en Bogotá, Medellín y Cali. El Ejecutivo Andino ofrece la estética pulcra de un cinturón sastre pero con el confort elástico invisible de la construcción en telar elástico de la Maison.',
+    descriptionLong: 'Diseñado para la junta directiva y eventos de etiqueta contemporáneos en Bogotá, Medellín y Cali. El Ejecutivo Andino ofrece la estética pulcra de un cinturón sastre pero con el confort elástico invisible de la construcción en telar elástico de Nativo Colombia.',
     material: '80% Micro-Trenzado Elástico de Poliamida de Alta Densa',
     leatherType: 'Cuero de Res Nappa Negro Mate (Bogotá, Colombia)',
     buckleMaterial: 'Acero Inoxidable con Recubrimiento PVD Gunmetal Mate',
@@ -385,7 +405,12 @@ export const INITIAL_PRODUCTS: Product[] = [
         url: LUXURY_IMAGES.scenarioPenthouse,
         tag: 'Penthouse',
         description: 'Sobre escritorio de ébano con iluminación cálida indirecta'
-      }
+      },
+      { id: 'img-new-1', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct1, tag: 'Studio' },
+      { id: 'img-new-2', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct2, tag: 'Studio' },
+      { id: 'img-new-3', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct3, tag: 'Studio' },
+      { id: 'img-new-4', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct4, tag: 'Studio' },
+      { id: 'img-new-5', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct5, tag: 'Studio' }
     ]
   },
   {
@@ -393,8 +418,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     sku: 'NAT-SMR-006',
     name: 'El Soleado Verano Colombiano',
     subtitle: 'Sand Cream, Ivory & Natural Brass',
-    price: 690,
-    currency: 'USD',
+    price: 79000,
+    currency: 'COP',
     category: 'Summer',
     tags: ['Summer', 'Colombian Collection', 'Light & Breathable'],
     descriptionShort: 'Fresco, ligero y veraniego. Trazos en tono arena y crema con hebilla de latón dorado suave.',
@@ -446,7 +471,12 @@ export const INITIAL_PRODUCTS: Product[] = [
         url: LUXURY_IMAGES.scenarioYacht,
         tag: 'Lifestyle',
         description: 'En terraza privada con vistas a la costa de Santa Marta'
-      }
+      },
+      { id: 'img-new-1', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct1, tag: 'Studio' },
+      { id: 'img-new-2', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct2, tag: 'Studio' },
+      { id: 'img-new-3', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct3, tag: 'Studio' },
+      { id: 'img-new-4', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct4, tag: 'Studio' },
+      { id: 'img-new-5', title: 'Nueva Colección', url: LUXURY_IMAGES.newProduct5, tag: 'Studio' }
     ]
   }
 ];
@@ -466,7 +496,7 @@ export const INITIAL_JOURNAL_POSTS: JournalArticle[] = [
     content: [
       'En la artesanía colombiana de alto nivel, el lujo verdadero no se grita: se sugiere mediante texturas ricas, trabajo manual y un ajuste impecable.',
       'La correa tejida elástica nació de la necesidad del caballero viajero colombiano que buscaba sostener la silueta impecable de sus pantalones de lino o lana fría sin comprometer el movimiento natural del cuerpo durante el día.',
-      'Para combinar una correa tejida tricolor como la Boyacá Edition, la regla de oro es hacer coincidir el cuero del pasador con el tono de los zapatos (mocasines artesanales coñac o zapatos de cuero colombiano), permitiendo que el entramado de hilos coordine con la camisa o el blazer.'
+      'Para combinar una correa tejida tricolor como la Boyacá Edition, la regla de oro es hacer coincidir el cuero del pasador con el tono de los zapatos (mocasines artesanales coñac o zapatos de cuero colombiano), permitiendo que el entramado de hilos coordine con la camisa o el blazer.',
     ]
   },
   {
@@ -483,7 +513,7 @@ export const INITIAL_JOURNAL_POSTS: JournalArticle[] = [
     content: [
       'En el corazón de los Andes colombianos, Boyacá ostenta una tradición textil que se remonta a las comunidades muiscas, perfeccionada a lo largo de siglos de mestizaje cultural.',
       'Nuestras correas no se producen masivamente en cintas industriales rápidas. Utilizamos telares de lanzadera ajustados a bajas revoluciones en Duitama y Nobsa, lo que otorga la tensión exacta y una simetría geométrica perfecta en los patrones entrelazados.',
-      'Cada carrete de hilo pasa por 3 inspecciones ópticas manuales antes de unirse al cuero curtido en Villapinzón, Cundinamarca.'
+      'Cada carrete de hilo pasa por 3 inspecciones ópticas manuales antes de unirse al cuero curtido en Villapinzón, Cundinamarca.',
     ]
   }
 ];

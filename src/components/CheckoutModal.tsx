@@ -85,8 +85,8 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#141312]/80 backdrop-blur-md overflow-y-auto">
-      <div className="relative w-full max-w-4xl bg-[#FAF8F5] text-[#1C1917] shadow-2xl rounded-sm border border-[#D4C9BD] p-6 sm:p-8 my-auto">
+    <div className="fixed inset-0 z-50 flex items-start sm:items-center justify-center sm:p-4 bg-[#141312]/80 backdrop-blur-md overflow-y-auto">
+      <div className="relative w-full sm:max-w-4xl bg-[#FAF8F5] text-[#1C1917] shadow-2xl sm:rounded-sm border-0 sm:border border-[#D4C9BD] p-4 sm:p-8 min-h-screen sm:min-h-0 sm:my-auto">
         <button
           onClick={onClose}
           className="absolute top-4 right-4 p-2 text-[#7A6E63] hover:text-[#1C1917]"
@@ -104,7 +104,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
           </h2>
         </div>
 
-        <form onSubmit={handleCompleteOrder} className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <form onSubmit={handleCompleteOrder} className="flex flex-col lg:grid lg:grid-cols-12 gap-6 sm:gap-8">
           {/* Left Column: Form Details & Payment Methods (7 cols) */}
           <div className="lg:col-span-7 space-y-6">
             <div>
@@ -123,7 +123,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                   />
                 </div>
 
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div>
                     <label className="block text-[10px] uppercase text-[#7A6E63] mb-1 font-medium">Correo Electrónico</label>
                     <input
@@ -146,7 +146,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                   </div>
                 </div>
 
-                <div className="grid grid-cols-3 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                   <div>
                     <label className="block text-[10px] uppercase text-[#7A6E63] mb-1 font-medium">Ciudad</label>
                     <input

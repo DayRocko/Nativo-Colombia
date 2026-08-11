@@ -211,7 +211,7 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({
                 className="w-full p-2.5 bg-[#FAF8F5] border border-[#D4C9BD] text-xs font-semibold text-[#1C1917] rounded-xs"
               />
               <p className="text-[10px] text-[#7A6E63] mt-1">
-                Puede alternar entre "Maison Correas" y "Nativo Colombia" libremente sin tocar código.
+                Puede modificar la configuración de la tienda libremente sin tocar código.
               </p>
             </div>
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Heart, ShoppingBag, Eye, SlidersHorizontal, Star } from 'lucide-react';
 import { Product, Currency } from '../types';
 
@@ -35,14 +35,28 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         return `€${Math.round(amountUSD * 0.92)}`;
       case 'GBP':
         return `£${Math.round(amountUSD * 0.78)}`;
+      case 'COP':
+        return `${amountUSD.toLocaleString('es-CO')} COP`;
       default:
-        return `$${amountUSD.toLocaleString()}`;
+        return `${amountUSD.toLocaleString()}`;
     }
   };
 
-  // Primary image vs Hover image
-  const primaryImg = activeVariant?.image || product.images[0]?.url;
-  const secondaryImg = product.images[1]?.url || product.images[0]?.url;
+  const [currentImageIdx, setCurrentImageIdx] = useState(0);
+
+  useEffect(() => {
+    let interval: number | undefined;
+    if (isHovered && product.images.length > 1) {
+      interval = window.setInterval(() => {
+        setCurrentImageIdx((prev) => (prev + 1) % product.images.length);
+      }, 1200);
+    } else {
+      setCurrentImageIdx(0);
+    }
+    return () => window.clearInterval(interval);
+  }, [isHovered, product.images.length]);
+
+  const currentImg = isHovered ? product.images[currentImageIdx]?.url : (activeVariant?.image || product.images[0]?.url);
 
   return (
     <div
@@ -53,10 +67,22 @@ export const ProductCard: React.FC<ProductCardProps> = ({
       {/* Image Container */}
       <div className="relative aspect-[4/5] bg-[#F4EFEA] overflow-hidden cursor-pointer" onClick={() => onQuickView(product)}>
         <img
-          src={isHovered ? secondaryImg : primaryImg}
+          src={currentImg}
           alt={product.name}
           className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
         />
+        
+        {/* Carousel Indicators (only visible on hover and if multiple images exist) */}
+        {product.images.length > 1 && (
+          <div className={`absolute bottom-3 left-0 right-0 flex justify-center gap-1.5 transition-opacity duration-300 z-20 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
+            {product.images.map((_, idx) => (
+              <div 
+                key={idx} 
+                className={`h-1 rounded-full transition-all duration-300 ${idx === currentImageIdx ? 'w-4 bg-white' : 'w-1.5 bg-white/50'}`} 
+              />
+            ))}
+          </div>
+        )}
 
         {/* Badges */}
         <div className="absolute top-3 left-3 flex flex-col gap-1.5 z-10">

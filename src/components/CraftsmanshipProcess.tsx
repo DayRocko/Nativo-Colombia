@@ -30,14 +30,14 @@ const STEPS = [
 
 export const CraftsmanshipProcess: React.FC = () => {
   return (
-    <section id="craft" className="py-24 bg-[#FAF8F5] border-b border-[#E8E2D9]">
+    <section id="craft" className="py-16 sm:py-24 bg-[#FAF8F5] border-b border-[#E8E2D9]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
           <div className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.25em] text-[#8C6D3F] font-semibold mb-2">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Proceso de Elaboración</span>
           </div>
-          <h2 className="text-3xl sm:text-5xl font-serif-luxury text-[#1C1917] uppercase tracking-wide font-normal">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-serif-luxury text-[#1C1917] uppercase tracking-wide font-normal">
             El Oficio de los Maestros Guarnicioneros
           </h2>
           <p className="mt-4 text-sm sm:text-base text-[#6E645A] font-light">
@@ -45,13 +45,13 @@ export const CraftsmanshipProcess: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
           {STEPS.map((s) => {
             const IconComp = s.icon;
             return (
               <div
                 key={s.step}
-                className="bg-[#F4EFEA] p-8 border border-[#E0D8CD] rounded-xs hover:border-[#C5A880] transition-all duration-300 flex flex-col justify-between group"
+                className="bg-[#F4EFEA] p-5 sm:p-8 border border-[#E0D8CD] rounded-xs hover:border-[#C5A880] transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
                   <div className="flex items-center justify-between mb-6">

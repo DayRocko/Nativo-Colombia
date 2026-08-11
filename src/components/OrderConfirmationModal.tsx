@@ -37,7 +37,7 @@ export const OrderConfirmationModal: React.FC<OrderConfirmationModalProps> = ({
         <body>
           <div class="header">
             <div>
-              <h1>Nativo Colombia | Maison Correas</h1>
+              <h1>Nativo Colombia</h1>
               <p>Calle 82 # 11-37, Parque de la 93, Bogotá, Colombia</p>
             </div>
             <div style="text-align: right;">
