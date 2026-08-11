@@ -6,7 +6,7 @@ export interface ProductVariant {
   id: string;
   colorName: string;
   colorHex: string;
-  buckleFinish: 'Brushed Brass' | 'Aged Bronze' | 'Gunmetal' | 'Polished Silver';
+  buckleFinish: 'Brushed Brass' | 'Aged Bronze' | 'Gunmetal' | 'Polished Silver' | 'Gold 24K';
   inStock: boolean;
   image: string;
 }
