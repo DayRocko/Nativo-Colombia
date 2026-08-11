@@ -324,6 +324,9 @@ export default function App() {
         isOpen={isStylistOpen}
         onClose={() => setIsStylistOpen(false)}
         language={language}
+        products={products}
+        currency={currency}
+        onAddToCart={handleAddToCart}
       />
 
       <SearchModal
