@@ -3,7 +3,6 @@ import coiledMasterpiece from '../assets/images/coiled_masterpiece_1785417282019
 import scenarioYacht from '../assets/images/scenario_yacht_1785417297209.jpg';
 import scenarioPenthouse from '../assets/images/scenario_penthouse_1785417310563.jpg';
 import scenarioBoutique from '../assets/images/scenario_boutique_1785417324893.jpg';
-import scenarioLifestyle from '../assets/images/scenario_lifestyle_1785417338607.jpg';
 import scenarioMuseum from '../assets/images/scenario_museum_1785417351375.jpg';
 
 // Nuevas imágenes de producto - Correas reales
@@ -12,7 +11,6 @@ import beltCoiledTravertine from '../assets/images/belt_coiled_travertine.jpg';
 import beltCoiledAccessories from '../assets/images/belt_coiled_accessories.jpg';
 import beltMarinaLuxury from '../assets/images/belt_marina_luxury.jpg';
 import beltBuckleMacro from '../assets/images/belt_buckle_macro.jpg';
-import beltManWearing from '../assets/images/belt_man_wearing.jpg';
 
 // Nuevas imágenes dinámicas (subidas por el usuario)
 import newProduct1 from '../assets/images/new_product_1.jpg';
@@ -21,13 +19,18 @@ import newProduct3 from '../assets/images/new_product_3.jpg';
 import newProduct4 from '../assets/images/new_product_4.jpg';
 import newProduct5 from '../assets/images/new_product_5.jpg';
 
+// Imágenes de hombres masculinos y varoniles - Nativo Colombia
+import manRuggedExecutive from '../assets/images/man_rugged_executive.png';
+import manStreetConfident from '../assets/images/man_street_confident.png';
+import manCasualLuxury from '../assets/images/man_casual_luxury.png';
+
 export const LUXURY_IMAGES = {
   heroBelts,
   coiledMasterpiece,
   scenarioYacht,
   scenarioPenthouse,
   scenarioBoutique,
-  scenarioLifestyle,
+  scenarioLifestyle: manStreetConfident,  // Reemplazado: ahora hombre varonil en Cartagena
   scenarioMuseum,
   // Nuevas imágenes producto real
   beltMarbleStudio,
@@ -35,11 +38,16 @@ export const LUXURY_IMAGES = {
   beltCoiledAccessories,
   beltMarinaLuxury,
   beltBuckleMacro,
-  beltManWearing,
-  
+  beltManWearing: manRuggedExecutive,  // Reemplazado: ahora hombre ejecutivo varonil
+
   newProduct1,
   newProduct2,
   newProduct3,
   newProduct4,
   newProduct5,
+
+  // Imágenes adicionales de hombres varoniles
+  manRuggedExecutive,
+  manStreetConfident,
+  manCasualLuxury,
 };

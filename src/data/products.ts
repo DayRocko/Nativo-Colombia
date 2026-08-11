@@ -63,6 +63,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.newProduct1,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-1",
+        "title": "Ejecutivo Colombiano",
+        "url": LUXURY_IMAGES.manRuggedExecutive,
+        "tag": "Lifestyle",
+        "description": "Hombre ejecutivo colombiano luciendo la correa en ambiente de hacienda premium"
       }
     ]
   },
@@ -127,6 +134,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.newProduct3,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-2",
+        "title": "Estilo Cartagena",
+        "url": LUXURY_IMAGES.manStreetConfident,
+        "tag": "Lifestyle",
+        "description": "Hombre caminando con confianza por las calles de Cartagena de Indias"
       }
     ]
   },
@@ -191,6 +205,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.newProduct2,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-3",
+        "title": "Lujo Casual Cafetero",
+        "url": LUXURY_IMAGES.manCasualLuxury,
+        "tag": "Lifestyle",
+        "description": "Estilo casual de lujo con vistas a las montañas cafeteras de Colombia"
       }
     ]
   },
@@ -255,6 +276,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.beltCoiledAccessories,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-4",
+        "title": "Ejecutivo Colombiano",
+        "url": LUXURY_IMAGES.manRuggedExecutive,
+        "tag": "Lifestyle",
+        "description": "Hombre ejecutivo colombiano luciendo la correa en ambiente de hacienda premium"
       }
     ]
   },
@@ -319,6 +347,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.newProduct3,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-5",
+        "title": "Estilo Cartagena",
+        "url": LUXURY_IMAGES.manStreetConfident,
+        "tag": "Lifestyle",
+        "description": "Hombre caminando con confianza por las calles de Cartagena de Indias"
       }
     ]
   },
@@ -383,6 +418,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.newProduct2,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-6",
+        "title": "Lujo Casual Cafetero",
+        "url": LUXURY_IMAGES.manCasualLuxury,
+        "tag": "Lifestyle",
+        "description": "Estilo casual de lujo con vistas a las montañas cafeteras de Colombia"
       }
     ]
   },
@@ -447,6 +489,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.newProduct4,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-7",
+        "title": "Ejecutivo Colombiano",
+        "url": LUXURY_IMAGES.manRuggedExecutive,
+        "tag": "Lifestyle",
+        "description": "Hombre ejecutivo colombiano luciendo la correa en ambiente de hacienda premium"
       }
     ]
   },
@@ -511,6 +560,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.beltCoiledAccessories,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-8",
+        "title": "Estilo Cartagena",
+        "url": LUXURY_IMAGES.manStreetConfident,
+        "tag": "Lifestyle",
+        "description": "Hombre caminando con confianza por las calles de Cartagena de Indias"
       }
     ]
   },
@@ -575,6 +631,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.newProduct5,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-9",
+        "title": "Lujo Casual Cafetero",
+        "url": LUXURY_IMAGES.manCasualLuxury,
+        "tag": "Lifestyle",
+        "description": "Estilo casual de lujo con vistas a las montañas cafeteras de Colombia"
       }
     ]
   },
@@ -639,6 +702,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.newProduct3,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-10",
+        "title": "Ejecutivo Colombiano",
+        "url": LUXURY_IMAGES.manRuggedExecutive,
+        "tag": "Lifestyle",
+        "description": "Hombre ejecutivo colombiano luciendo la correa en ambiente de hacienda premium"
       }
     ]
   },
@@ -703,6 +773,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.beltBuckleMacro,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-11",
+        "title": "Estilo Cartagena",
+        "url": LUXURY_IMAGES.manStreetConfident,
+        "tag": "Lifestyle",
+        "description": "Hombre caminando con confianza por las calles de Cartagena de Indias"
       }
     ]
   },
@@ -767,6 +844,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.newProduct3,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-12",
+        "title": "Lujo Casual Cafetero",
+        "url": LUXURY_IMAGES.manCasualLuxury,
+        "tag": "Lifestyle",
+        "description": "Estilo casual de lujo con vistas a las montañas cafeteras de Colombia"
       }
     ]
   },
@@ -831,6 +915,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.beltManWearing,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-13",
+        "title": "Ejecutivo Colombiano",
+        "url": LUXURY_IMAGES.manRuggedExecutive,
+        "tag": "Lifestyle",
+        "description": "Hombre ejecutivo colombiano luciendo la correa en ambiente de hacienda premium"
       }
     ]
   },
@@ -895,6 +986,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.newProduct2,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-14",
+        "title": "Estilo Cartagena",
+        "url": LUXURY_IMAGES.manStreetConfident,
+        "tag": "Lifestyle",
+        "description": "Hombre caminando con confianza por las calles de Cartagena de Indias"
       }
     ]
   },
@@ -959,6 +1057,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.beltMarbleStudio,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-15",
+        "title": "Lujo Casual Cafetero",
+        "url": LUXURY_IMAGES.manCasualLuxury,
+        "tag": "Lifestyle",
+        "description": "Estilo casual de lujo con vistas a las montañas cafeteras de Colombia"
       }
     ]
   },
@@ -1023,6 +1128,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.beltMarinaLuxury,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-16",
+        "title": "Ejecutivo Colombiano",
+        "url": LUXURY_IMAGES.manRuggedExecutive,
+        "tag": "Lifestyle",
+        "description": "Hombre ejecutivo colombiano luciendo la correa en ambiente de hacienda premium"
       }
     ]
   },
@@ -1087,6 +1199,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.newProduct2,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-17",
+        "title": "Estilo Cartagena",
+        "url": LUXURY_IMAGES.manStreetConfident,
+        "tag": "Lifestyle",
+        "description": "Hombre caminando con confianza por las calles de Cartagena de Indias"
       }
     ]
   },
@@ -1151,6 +1270,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.beltManWearing,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-18",
+        "title": "Lujo Casual Cafetero",
+        "url": LUXURY_IMAGES.manCasualLuxury,
+        "tag": "Lifestyle",
+        "description": "Estilo casual de lujo con vistas a las montañas cafeteras de Colombia"
       }
     ]
   },
@@ -1215,6 +1341,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.beltMarbleStudio,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-19",
+        "title": "Ejecutivo Colombiano",
+        "url": LUXURY_IMAGES.manRuggedExecutive,
+        "tag": "Lifestyle",
+        "description": "Hombre ejecutivo colombiano luciendo la correa en ambiente de hacienda premium"
       }
     ]
   },
@@ -1279,6 +1412,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.beltCoiledAccessories,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-20",
+        "title": "Estilo Cartagena",
+        "url": LUXURY_IMAGES.manStreetConfident,
+        "tag": "Lifestyle",
+        "description": "Hombre caminando con confianza por las calles de Cartagena de Indias"
       }
     ]
   },
@@ -1343,6 +1483,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.newProduct2,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-21",
+        "title": "Lujo Casual Cafetero",
+        "url": LUXURY_IMAGES.manCasualLuxury,
+        "tag": "Lifestyle",
+        "description": "Estilo casual de lujo con vistas a las montañas cafeteras de Colombia"
       }
     ]
   },
@@ -1407,6 +1554,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.beltBuckleMacro,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-22",
+        "title": "Ejecutivo Colombiano",
+        "url": LUXURY_IMAGES.manRuggedExecutive,
+        "tag": "Lifestyle",
+        "description": "Hombre ejecutivo colombiano luciendo la correa en ambiente de hacienda premium"
       }
     ]
   },
@@ -1471,6 +1625,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.newProduct4,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-23",
+        "title": "Estilo Cartagena",
+        "url": LUXURY_IMAGES.manStreetConfident,
+        "tag": "Lifestyle",
+        "description": "Hombre caminando con confianza por las calles de Cartagena de Indias"
       }
     ]
   },
@@ -1535,6 +1696,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.newProduct4,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-24",
+        "title": "Lujo Casual Cafetero",
+        "url": LUXURY_IMAGES.manCasualLuxury,
+        "tag": "Lifestyle",
+        "description": "Estilo casual de lujo con vistas a las montañas cafeteras de Colombia"
       }
     ]
   },
@@ -1599,6 +1767,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.beltCoiledTravertine,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-25",
+        "title": "Ejecutivo Colombiano",
+        "url": LUXURY_IMAGES.manRuggedExecutive,
+        "tag": "Lifestyle",
+        "description": "Hombre ejecutivo colombiano luciendo la correa en ambiente de hacienda premium"
       }
     ]
   },
@@ -1663,6 +1838,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.newProduct1,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-26",
+        "title": "Estilo Cartagena",
+        "url": LUXURY_IMAGES.manStreetConfident,
+        "tag": "Lifestyle",
+        "description": "Hombre caminando con confianza por las calles de Cartagena de Indias"
       }
     ]
   },
@@ -1727,6 +1909,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.newProduct1,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-27",
+        "title": "Lujo Casual Cafetero",
+        "url": LUXURY_IMAGES.manCasualLuxury,
+        "tag": "Lifestyle",
+        "description": "Estilo casual de lujo con vistas a las montañas cafeteras de Colombia"
       }
     ]
   },
@@ -1791,6 +1980,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.beltBuckleMacro,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-28",
+        "title": "Ejecutivo Colombiano",
+        "url": LUXURY_IMAGES.manRuggedExecutive,
+        "tag": "Lifestyle",
+        "description": "Hombre ejecutivo colombiano luciendo la correa en ambiente de hacienda premium"
       }
     ]
   },
@@ -1855,6 +2051,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.newProduct2,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-29",
+        "title": "Estilo Cartagena",
+        "url": LUXURY_IMAGES.manStreetConfident,
+        "tag": "Lifestyle",
+        "description": "Hombre caminando con confianza por las calles de Cartagena de Indias"
       }
     ]
   },
@@ -1919,6 +2122,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.beltManWearing,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-30",
+        "title": "Lujo Casual Cafetero",
+        "url": LUXURY_IMAGES.manCasualLuxury,
+        "tag": "Lifestyle",
+        "description": "Estilo casual de lujo con vistas a las montañas cafeteras de Colombia"
       }
     ]
   },
@@ -1983,6 +2193,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.beltMarbleStudio,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-31",
+        "title": "Ejecutivo Colombiano",
+        "url": LUXURY_IMAGES.manRuggedExecutive,
+        "tag": "Lifestyle",
+        "description": "Hombre ejecutivo colombiano luciendo la correa en ambiente de hacienda premium"
       }
     ]
   },
@@ -2047,6 +2264,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.beltMarbleStudio,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-32",
+        "title": "Estilo Cartagena",
+        "url": LUXURY_IMAGES.manStreetConfident,
+        "tag": "Lifestyle",
+        "description": "Hombre caminando con confianza por las calles de Cartagena de Indias"
       }
     ]
   },
@@ -2111,6 +2335,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.beltCoiledAccessories,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-33",
+        "title": "Lujo Casual Cafetero",
+        "url": LUXURY_IMAGES.manCasualLuxury,
+        "tag": "Lifestyle",
+        "description": "Estilo casual de lujo con vistas a las montañas cafeteras de Colombia"
       }
     ]
   },
@@ -2175,6 +2406,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.newProduct1,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-34",
+        "title": "Ejecutivo Colombiano",
+        "url": LUXURY_IMAGES.manRuggedExecutive,
+        "tag": "Lifestyle",
+        "description": "Hombre ejecutivo colombiano luciendo la correa en ambiente de hacienda premium"
       }
     ]
   },
@@ -2239,6 +2477,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.newProduct1,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-35",
+        "title": "Estilo Cartagena",
+        "url": LUXURY_IMAGES.manStreetConfident,
+        "tag": "Lifestyle",
+        "description": "Hombre caminando con confianza por las calles de Cartagena de Indias"
       }
     ]
   },
@@ -2303,6 +2548,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.beltManWearing,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-36",
+        "title": "Lujo Casual Cafetero",
+        "url": LUXURY_IMAGES.manCasualLuxury,
+        "tag": "Lifestyle",
+        "description": "Estilo casual de lujo con vistas a las montañas cafeteras de Colombia"
       }
     ]
   },
@@ -2367,6 +2619,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.newProduct5,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-37",
+        "title": "Ejecutivo Colombiano",
+        "url": LUXURY_IMAGES.manRuggedExecutive,
+        "tag": "Lifestyle",
+        "description": "Hombre ejecutivo colombiano luciendo la correa en ambiente de hacienda premium"
       }
     ]
   },
@@ -2431,6 +2690,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.beltMarinaLuxury,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-38",
+        "title": "Estilo Cartagena",
+        "url": LUXURY_IMAGES.manStreetConfident,
+        "tag": "Lifestyle",
+        "description": "Hombre caminando con confianza por las calles de Cartagena de Indias"
       }
     ]
   },
@@ -2495,6 +2761,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.beltCoiledTravertine,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-39",
+        "title": "Lujo Casual Cafetero",
+        "url": LUXURY_IMAGES.manCasualLuxury,
+        "tag": "Lifestyle",
+        "description": "Estilo casual de lujo con vistas a las montañas cafeteras de Colombia"
       }
     ]
   },
@@ -2559,6 +2832,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.newProduct1,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-40",
+        "title": "Ejecutivo Colombiano",
+        "url": LUXURY_IMAGES.manRuggedExecutive,
+        "tag": "Lifestyle",
+        "description": "Hombre ejecutivo colombiano luciendo la correa en ambiente de hacienda premium"
       }
     ]
   },
@@ -2623,6 +2903,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.beltCoiledAccessories,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-41",
+        "title": "Estilo Cartagena",
+        "url": LUXURY_IMAGES.manStreetConfident,
+        "tag": "Lifestyle",
+        "description": "Hombre caminando con confianza por las calles de Cartagena de Indias"
       }
     ]
   },
@@ -2687,6 +2974,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.newProduct2,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-42",
+        "title": "Lujo Casual Cafetero",
+        "url": LUXURY_IMAGES.manCasualLuxury,
+        "tag": "Lifestyle",
+        "description": "Estilo casual de lujo con vistas a las montañas cafeteras de Colombia"
       }
     ]
   },
@@ -2751,6 +3045,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.newProduct3,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-43",
+        "title": "Ejecutivo Colombiano",
+        "url": LUXURY_IMAGES.manRuggedExecutive,
+        "tag": "Lifestyle",
+        "description": "Hombre ejecutivo colombiano luciendo la correa en ambiente de hacienda premium"
       }
     ]
   },
@@ -2815,6 +3116,13 @@ export const PRODUCTS_DATA: Product[] = [
         "url": LUXURY_IMAGES.beltCoiledAccessories,
         "tag": "Detail",
         "description": "Detalle del acabado en cuero"
+      },
+      {
+        "id": "img-lifestyle-44",
+        "title": "Estilo Cartagena",
+        "url": LUXURY_IMAGES.manStreetConfident,
+        "tag": "Lifestyle",
+        "description": "Hombre caminando con confianza por las calles de Cartagena de Indias"
       }
     ]
   }
