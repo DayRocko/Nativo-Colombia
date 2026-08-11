@@ -15,14 +15,14 @@ interface FeaturedCollectionsProps {
 }
 
 const CATEGORIES = [
-  { id: 'ALL', name: 'Toda la Colección' },
-  { id: 'Monaco', name: 'Monaco Edition' },
-  { id: 'Luxury', name: 'Luxury Collection' },
-  { id: 'Classic', name: 'Clásicas' },
-  { id: 'Business', name: 'Business Executive' },
-  { id: 'Navy', name: 'Navy Collection' },
-  { id: 'Summer', name: 'Summer & Linen' },
-  { id: 'Limited', name: 'Edición Limitada' },
+  { id: 'ALL', name: 'Toda la Colección', subtitle: 'El legado completo de nuestra artesanía andina' },
+  { id: 'Esmeralda', name: 'Edición Esmeralda', subtitle: 'Tonos vivos inspirados en la esmeralda de Muzo' },
+  { id: 'Cafetera', name: 'Colección Cafetera', subtitle: 'Matices tierra y dorados del eje cafetero' },
+  { id: 'Bogota', name: 'Línea Bogotá', subtitle: 'Elegancia clásica para la capital' },
+  { id: 'Ejecutiva', name: 'Línea Ejecutiva Andina', subtitle: 'Sobriedad absoluta para la sala de juntas' },
+  { id: 'Cartagena', name: 'Colección Cartagena', subtitle: 'Tonos profundos inspirados en el mar Caribe colombiano' },
+  { id: 'Caribe', name: 'Colección Caribe', subtitle: 'Fibras frescas y tonos claros para el verano eterno' },
+  { id: 'Oro', name: 'Edición Oro Colombia', subtitle: 'Detalles bañados en oro de 24 quilates, edición numerada' }
 ];
 
 export const FeaturedCollections: React.FC<FeaturedCollectionsProps> = ({
@@ -39,7 +39,9 @@ export const FeaturedCollections: React.FC<FeaturedCollectionsProps> = ({
 
   const filteredProducts = activeCategory === 'ALL'
     ? products
-    : products.filter(p => p.category === activeCategory || (activeCategory === 'Luxury' && p.price >= 750));
+    : products.filter(p => p.category === activeCategory);
+    
+  const activeCategoryObj = CATEGORIES.find(c => c.id === activeCategory);
 
   return (
     <section id="collection" className="py-20 bg-[#FAF8F5] border-b border-[#E8E2D9]">
@@ -74,6 +76,15 @@ export const FeaturedCollections: React.FC<FeaturedCollectionsProps> = ({
             </button>
           ))}
         </div>
+        
+        {/* Dynamic Subtitle */}
+        {activeCategoryObj && (
+          <div className="text-center mb-10 -mt-6">
+            <p className="text-sm text-[#6E645A] font-serif italic tracking-wide">
+              {activeCategoryObj.subtitle}
+            </p>
+          </div>
+        )}
 
         {/* Product Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -95,7 +106,7 @@ export const FeaturedCollections: React.FC<FeaturedCollectionsProps> = ({
         {filteredProducts.length === 0 && (
           <div className="text-center py-16 bg-[#F4EFEA] rounded-sm border border-[#E0D8CD]">
             <p className="text-base text-[#6E645A] font-serif italic">
-              No se encontraron piezas en esta categoría en este momento.
+              Próximamente nuevas piezas en esta colección.
             </p>
             <button
               onClick={() => setActiveCategory('ALL')}

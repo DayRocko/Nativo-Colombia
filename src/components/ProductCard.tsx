@@ -42,21 +42,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({
     }
   };
 
-  const [currentImageIdx, setCurrentImageIdx] = useState(0);
-
-  useEffect(() => {
-    let interval: number | undefined;
-    if (isHovered && product.images.length > 1) {
-      interval = window.setInterval(() => {
-        setCurrentImageIdx((prev) => (prev + 1) % product.images.length);
-      }, 1200);
-    } else {
-      setCurrentImageIdx(0);
-    }
-    return () => window.clearInterval(interval);
-  }, [isHovered, product.images.length]);
-
-  const currentImg = isHovered ? product.images[currentImageIdx]?.url : (activeVariant?.image || product.images[0]?.url);
+  // Hover swap to second image if available
+  const currentImg = isHovered && product.images.length > 1 
+    ? product.images[1].url 
+    : (activeVariant?.image || product.images[0]?.url);
 
   return (
     <div
@@ -72,17 +61,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
         />
         
-        {/* Carousel Indicators (only visible on hover and if multiple images exist) */}
-        {product.images.length > 1 && (
-          <div className={`absolute bottom-3 left-0 right-0 flex justify-center gap-1.5 transition-opacity duration-300 z-20 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
-            {product.images.map((_, idx) => (
-              <div 
-                key={idx} 
-                className={`h-1 rounded-full transition-all duration-300 ${idx === currentImageIdx ? 'w-4 bg-white' : 'w-1.5 bg-white/50'}`} 
-              />
-            ))}
-          </div>
-        )}
+        
 
         {/* Badges */}
         <div className="absolute top-3 left-3 flex flex-col gap-1.5 z-10">
