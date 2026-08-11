@@ -46,7 +46,7 @@ export default function App() {
   // Limpieza de claves antiguas del localStorage (migración de aeterna_ → nativo_)
   // También fuerza los campos de texto que pueden haber quedado en inglés
   if (typeof window !== 'undefined') {
-    ['aeterna_cms', 'aeterna_products', 'aeterna_cart', 'aeterna_wishlist', 'aeterna_compare', 'aeterna_orders'].forEach(k => localStorage.removeItem(k));
+    ['aeterna_cms', 'aeterna_products', 'aeterna_cart', 'aeterna_wishlist', 'aeterna_compare', 'aeterna_orders', 'nativo_products'].forEach(k => localStorage.removeItem(k));
     // Forzar heroTitle y heroSubtitle correctos si están en caché con los valores viejos
     const cachedCms = localStorage.getItem('nativo_cms');
     if (cachedCms) {
